@@ -17,7 +17,7 @@ const resultSchema = new mongoose.Schema({
 });
 
 const roastSchema = new mongoose.Schema({
-  title: String,
+  title: {type: String, required: true},
   region: String,
   processed: String,
   date: Date,
